@@ -15,6 +15,7 @@ class News extends Model
         'id',
         'title',
         'content',
+        'image',
         'created_by',
         'updated_by'
     ];
