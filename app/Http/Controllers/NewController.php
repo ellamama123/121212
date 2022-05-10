@@ -8,13 +8,13 @@ class NewController extends Controller
 {
     public function index(Request $request){
         $news = News::all();
-        return view('news',compact('news'));
+        return view('new.index',compact('news'));
     }
 
     public function create(){
-        return view('form');
+        return view('new.form');
     }
-    
+
     public function store(Request $request)
     {
         $input = $request->all();
